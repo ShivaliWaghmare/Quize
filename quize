@@ -1,0 +1,38 @@
+var readlineSync = require('readline-sync');
+var score = 0;
+console.log("HEY! WELCOME TO MY QUIZE");
+var userName = readlineSync.question("What is your name ??");
+console.log("WELCOME\n" + userName + "LET'S!! SEE HOW WELL YOU DO KNOW ME?" );
+
+function play (question,answer){
+    var userName = readlineSync.question(question);
+    if (userAnswer===answer){
+        console.log("YOU ARE RIGHT!!");
+        score = score + 1
+    }
+else{console.log("YOU ARE WRONG!!");
+}
+console.log("CURRENT SCORE : " + score);
+console.log("-----------------------------")
+}
+
+var question = [ {question :"LET'S KEEP THIS SIMPLE MY FAVORITE COLOR ?\n",
+answer : "Blue"},
+{question :"AM I OLDER THAN 19 ?\n",
+answer : "No"},
+{question :"MY FAVORITE CUISINE ?\n",
+answer : "Korean"},
+{question :"WHICH SUPERHERO DO I LIKE ?\n",
+answer : "Thor"},
+{question :"NAME THE MOVIE I LOVE THE MOST ?\n",
+answer : "Enola Homes"},
+{question :"MY FAVORITE THING TO DO WHEN I AM FREE ?\n",
+answer : "Meditation"}
+];
+
+for (var i=0; i<question.length; i++){
+    var currentQuestion = question[i];
+    play(cureentQuestion.question,
+        currentQuestion.answer)
+}
+console.log("YAY!!, YOUR SCORE : " + score )
