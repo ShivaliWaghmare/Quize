@@ -35,4 +35,5 @@ for (var i=0; i<question.length; i++){
     play(cureentQuestion.question,
         currentQuestion.answer)
 }
-console.log("YAY!!, YOUR SCORE : " + score )
+console.log("YAY!!, YOUR SCORE : " + score );
+console.log("THANKS FOR TAKING PART IN THIS QUIZE")
