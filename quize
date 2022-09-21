@@ -1,11 +1,11 @@
 var readlineSync = require('readline-sync');
 var score = 0;
 console.log("HEY! WELCOME TO MY QUIZE");
-var userName = readlineSync.question("What is your name ??");
+var userName = readlineSync.question("What is your name ??\n");
 console.log("WELCOME\n" + userName + "LET'S!! SEE HOW WELL YOU DO KNOW ME?" );
 
 function play (question,answer){
-    var userName = readlineSync.question(question);
+    var userAnswer = readlineSync.question(question);
     if (userAnswer===answer){
         console.log("YOU ARE RIGHT!!");
         score = score + 1
@@ -32,7 +32,7 @@ answer : "Meditation"}
 
 for (var i=0; i<question.length; i++){
     var currentQuestion = question[i];
-    play(cureentQuestion.question,
+    play(currentQuestion.question,
         currentQuestion.answer)
 }
 console.log("YAY!!, YOUR SCORE : " + score );
