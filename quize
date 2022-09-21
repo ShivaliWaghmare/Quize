@@ -2,7 +2,7 @@ var readlineSync = require('readline-sync');
 var score = 0;
 console.log("HEY! WELCOME TO MY QUIZE");
 var userName = readlineSync.question("What is your name ??\n");
-console.log("WELCOME\n" + userName + "LET'S!! SEE HOW WELL YOU DO KNOW ME?" );
+console.log("WELCOME\n" + userName + "\nLET'S!! SEE HOW WELL YOU DO KNOW ME?\n" );
 
 function play (question,answer){
     var userAnswer = readlineSync.question(question);
